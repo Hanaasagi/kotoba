@@ -1,3 +1,5 @@
+##本文译自[https://www.exploit-db.com/docs/37953.pdf](https://www.exploit-db.com/docs/37953.pdf)
+----
 #<center>MySQL Error Based SQL Injection Using EXP</center>  
 <center>Osanda Malith Jayathissa</center>  
 <center>(@OsandaMalith)</center>  
