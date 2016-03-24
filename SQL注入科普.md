@@ -1,11 +1,16 @@
+#SQL注入科普  
+
+Edit by Qsaka  
+
+----  
 ##SQL注入是如何产生的  
 SQL注入的根本原因是不安全的操作被带入到数据库中。  
 SQL注入从根源上可以分为int类型和string类型。  
-1)int类型  
+1) int类型  
 
     "select name from students where id = $_GET['id']"
 这是一个典型的未经任何过滤的注入，如果用户提交`id=-1 union select user()` ，将返回当前用户。  
-2)string类型  
+2) string类型  
 
     "select name from students where area = '$_GET['area']'"
 string型注入需要使用单/双引号闭合语句。如`area=%27 union select user()%23`。  
